@@ -1,5 +1,286 @@
+html {
+    box-sizing: border-box;
+    font-family: var(--ff-title);
+    color: gray;
+    font-size: 1.25rem;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+
+/* Typography*/
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+h2,
+h3 {
+    font-family: cursive;
+    line-height: 0.8;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 0.85em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.text-green {
+    color: green;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.section-title-small {
+    font-size: 2rem;
+}
+
+.section-title-small small {
+    font-size: 0.7em;
+    display: block;
+}
+
 .logo {
     text-align: center;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-family: fantasy;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    padding: 1em 0 2em;
+}
+
+
+/* naigation*/
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: green;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(128, 128, 128);
+    text-decoration: underline;
+}
+
+
+/* buttons*/
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 0.75em 2.5em;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    background-color: green;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: rgb(0, 53, 0);
+}
+
+.btn-accent {
+    background-color: purple;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+    background-color: rgb(63, 0, 63);
+}
+
+
+/* Homeoage styles*/
+
+.hero {
+    background-color: gray;
+    background-image: url(/images/web-1935737_1920.png);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 15vh 1em;
+}
+
+.about-us {
+    background-color: rgba(73, 8, 73, 0.904);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0;
+}
+
+.about-us__intro {
+    background-image: url(/images/web-3706562_1920.jpg);
+    padding: 3em 1em 1em;
+}
+
+.about-us__body {
+    padding: 1em 1em 3em;
+}
+
+.order-online {
+    background: rgb(212, 211, 211);
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    background: rgb(228, 227, 227);
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 0 1em black;
+    margin-bottom: 1em;
+    max-width: 30rem;
+}
+
+.product:last-of-type {
+    margin-bottom: 2em;
+}
+
+.product__content {
+    padding: 1.5em;
+}
+
+.product__title {
+    color: green;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.fineprint {
+    font-size: 0.75em;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    background: gray;
+    color: white !important;
+    padding: 3em 1em;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 2em;
+    justify-content: center;
+}
+
+.footer-nav,
+.footer-social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav a {
+    padding: 0.75em;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: turquoise;
+}
+
+.footer-social a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+footer a:any-link {
+    color: white;
+}
+
+.social-icon {
+    max-width: 50px;
+}
+
+.social-link {
+    width: 50px;
+}
+
+@media only screen and (min-width: 750px) {
+    section {
+        padding: 6em 1em;
+    }
+    .about-us {
+        flex-direction: row;
+    }
+    .about-us__intro,
+    .about-us__body {
+        flex: 0 1 50%;
+        flex-direction: column;
+        padding: 2em 1em;
+        justify-content: center;
+    }
+    .about-us__intro {
+        text-align: right;
+    }
+    .about-us__intro>* {
+        max-width: 25rem;
+        border: 3px solid yellow;
+    }
 }

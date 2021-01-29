@@ -10,28 +10,30 @@
 
 <body>
     <header>
-        <h1 class="logo">HippieProgramer SRL</h1>
+        <h1 class="logo"><a href="index.html">HippieProgramer SRL</a></h1>
         <nav>
             <ul>
-                <li>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Connect</a>
-                    <a href="#">Products</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Connect</a></li>
+                <li><a href="#">Products</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
+        <section class="hero">
+            <h2 class="section-title">No Sugar. No Oil. All real Food</h2>
+        </section>
+
         <section class="intro">
-            <h2 class="section-title">WE ARE OHIOS FIRST <span>OIL-FREE</span> AND <span>SUGAR-FREE</span> GRANOLA COMPANY</h2>
+            <h2 class="section-title">WE ARE OHIOS FIRST <span class="text-green">OIL-FREE</span> AND <span class="text-green">SUGAR-FREE</span> GRANOLA COMPANY</h2>
         </section>
 
         <section class="about-us">
             <header class="about-us__intro">
-                <h2 class="section-title">THIS IS A H2 SECTION WHERE COMES A TITLE</h2>
+                <h2 class="section-title-small"><small>THIS IS A H2 SECTION WHERE COMES A TITLE</small>THIS IS A H2 SECTION WHERE COMES A TITLE</h2>
             </header>
             <div class="about-us__body">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
@@ -41,41 +43,50 @@
 
         <section class="order-online">
             <header>
-                <h2 class="section-title">ORDER ONLINE</h2>
+                <h2 class="section-title text-green">ORDER ONLINE</h2>
             </header>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
             <div class="btn-group">
-                <a href="" class="btn-primary"></a>
-                <a href="" class="btn-primary"></a>
-                <a href="" class="btn-primary"></a>
+                <a href="" class="btn btn-primary">BUTTON 1</a>
+                <a href="" class="btn btn-primary">BUTTON 2</a>
+                <a href="" class="btn btn-primary">BUTTON 3</a>
             </div>
         </section>
 
         <section class="product-showcase">
             <header>
-                <h2 class="section-title">SOME OF OUR PRODUCTS</h2>
+                <h2 class="section-title text-green">SOME OF OUR PRODUCTS</h2>
             </header>
             <div class="products">
                 <div class="product">
-                    <h3>Lorem Ipsum is simply dummy text of th</h3>
-                    <img src="" alt="" class="product__img">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                    <div class="product__content">
+                        <img src="images/hacker-4031973_1920.jpg" alt="" class="product__img">
+                        <h3 class="product__title">Lorem Ipsum is simply dummy text of th</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                        <p class="fineprint">Certified Organic</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <h3>Lorem Ipsum is simply dummy text of th</h3>
-                    <img src="" alt="" class="product__img">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                    <div class="product__content">
+                        <img src="images/laptop-336373_1920.jpg" alt="" class="product__img">
+                        <h3 class="product__title">Lorem Ipsum is simply dummy text of th</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                        <p class="fineprint">Certified Organic</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <h3>Lorem Ipsum is simply dummy text of th</h3>
-                    <img src="" alt="" class="product__img">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                    <div class="product__content">
+                        <img src="images/programmer-1653351_1280.png" alt="" class="product__img">
+                        <h3 class="product__title">Lorem Ipsum is simply dummy text of th</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                        <p class="fineprint">Certified Organic</p>
+                    </div>
                 </div>
             </div>
 
@@ -84,46 +95,31 @@
             </div>
 
             <div class="btn-group">
-                <a href="" class="btn-primary"></a>
-                <a href="" class="btn-primary"></a>
-                <a href="" class="btn-primary"></a>
+                <p class="mb-0">Order through one of the following:</p>
+                <a href="" class="btn btn-primary">Email</a>
+                <a href="" class="btn btn-primary">Facebook</a>
+                <a href="" class="btn btn-primary">Instagram</a>
             </div>
         </section>
-
-        <footer>
-
-        </footer>
     </main>
-
-    <body>
-
-    </body>
-
-    <footer>
-        <ul class="footer-nav">
-            <li>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Connect</a>
-                <a href="#">Products</a>
-            </li>
-        </ul>
-
-        <ul class="footer-social">
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-        </ul>
-    </footer>
 </body>
+
+<footer>
+    <ul class="footer-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Connect</a></li>
+        <li><a href="#">Products</a></li>
+    </ul>
+
+    <ul class="footer-social">
+        <li>
+            <a class="social-link" href="https://www.facebook.com/"><img src="/images/face.png" class="social-icon" alt="" aria-label="facebook"></a>
+        </li>
+        <li>
+            <a class="social-link" href="https://www.instagram.com/"><img src="/images/face.png" class="social-icon" alt="" aria-label="instagram"></a>
+        </li>
+    </ul>
+</footer>
 
 </html>
